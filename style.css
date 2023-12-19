@@ -2,13 +2,14 @@ body {
   font-family: Jost;
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
 }
 
 .header {
   background-color: #141024;
   padding: 30px 0;
   color: #fff;
-  line-height: 1.6;
 }
 
 .header__content {
@@ -39,4 +40,88 @@ body {
   max-width: 255px;
   font-size: 30px;
   font-weight: 600;
+}
+
+.promo {
+  min-height: calc(100dvh - 108px);
+  background-color: #141024;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.promo__wrapper {
+  margin-top: 21.85%;
+}
+
+.promo-wrapper__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-wrapper__title {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.promo-wrapper__sub-title {
+  font-size: 20px;
+  max-width: 478px;
+  margin-top: 20px;
+}
+
+.promo-wrapper__button {
+  margin-top: 50px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  padding: 25px 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #d52027;
+  font-size: 18px;
+  color: inherit;
+}
+
+.promo-wrapper__img {
+  position: absolute;
+  left: 48.125%;
+  width: 783px;
+  height: 917px;
+  top: 54px;
+}
+
+.stats__description {
+  margin-top: 120px;
+  color: #141024;
+  font-size: 30px;
+}
+
+.stats__description--bolt {
+  font-weight: 600;
+}
+
+.stats__wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+}
+
+.stats-item__number {
+  color: #d52027;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.stats-item__description {
+  color: rgba(20, 16, 36, 0.7);
 }
