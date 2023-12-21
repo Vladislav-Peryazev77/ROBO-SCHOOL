@@ -125,6 +125,6 @@ table {
 .button {
   font: inherit;
   cursor: pointer;
-  background: #d52027;
+  background-color: #d52027;
   user-select: none;
 }

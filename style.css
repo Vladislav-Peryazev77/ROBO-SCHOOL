@@ -66,7 +66,7 @@ section {
 }
 
 .promo {
-  min-height: calc(100dvh - 108px);
+  height: calc(100dvh - 108px);
   background-color: #141024;
   color: #fff;
   position: relative;
@@ -83,11 +83,11 @@ section {
   margin-top: 22%;
 }
 
-.promo-wrapper__title {
+.promo-text__title {
   font-size: 70px;
 }
 
-.promo-wrapper__sub-title {
+.promo-text__subtitle {
   font-size: 20px;
   max-width: 478px;
   margin-top: 20px;
@@ -99,7 +99,6 @@ section {
 
 .button {
   border: none;
-  outline: none;
   padding: 25px 54px;
   justify-content: center;
   align-items: center;
@@ -142,8 +141,4 @@ section {
 
 .stats-item__description {
   color: rgba(20, 16, 36, 0.7);
-}
-
-.h23 {
-  color: black;
 }
