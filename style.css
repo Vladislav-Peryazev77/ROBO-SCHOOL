@@ -142,3 +142,30 @@ section {
 .stats-item__description {
   color: rgba(20, 16, 36, 0.7);
 }
+
+.will-you-get {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.will-you-get__title {
+  color: #141024;
+  font-size: 50px;
+}
+
+.will-you-get-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.will-you-get-item__title {
+  color: #141024;
+  font-size: 24px;
+}
+
+.will-you-get-item__description {
+  color: rgba(20, 16, 36, 0.7);
+  margin-top: 20px;
+}
