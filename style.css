@@ -134,6 +134,10 @@ section {
   justify-content: space-between;
 }
 
+.stats-item {
+  flex-basis: 360px;
+}
+
 .stats-item__number {
   color: #d52027;
   font-size: 70px;
