@@ -143,29 +143,71 @@ section {
   color: rgba(20, 16, 36, 0.7);
 }
 
-.will-you-get {
+.benefits {
   background-color: #f9f9f9;
   padding: 100px 0;
 }
 
-.will-you-get__title {
+.benefits__title {
   color: #141024;
   font-size: 50px;
 }
 
-.will-you-get-wrapper {
+.benefits-wrapper {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
   gap: 40px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.will-you-get-item__title {
+.benefits-item {
+  flex-basis: 360px;
+}
+
+.benefits-item__title {
   color: #141024;
   font-size: 24px;
 }
 
-.will-you-get-item__description {
-  color: rgba(20, 16, 36, 0.7);
+.benefits-item__description {
+  color: #141024b3;
+  margin-top: 20px;
+}
+
+.coachs__title {
+  font-size: 50px;
+  color: #141024;
+}
+
+.coachs-wrapper {
+  margin-top: 60px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.coachs-item__photo {
+  width: 360px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #c4c4c4;
+}
+
+.coachs-item__title {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #141024;
+}
+
+.coachs-item__description {
+  color: #141024b3;
+  margin-top: 10px;
+}
+
+.coachs-item__else-info {
+  color: #d52027;
   margin-top: 20px;
 }
