@@ -215,3 +215,74 @@ section {
   color: #d52027;
   margin-top: 20px;
 }
+
+.packages__title {
+  color: #141024;
+  font-size: 50px;
+}
+
+.packages-wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.packages-item {
+  width: 360px;
+  height: 460px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #141024;
+  flex-basis: 360px;
+  box-sizing: border-box;
+  transition: background-color, transform 0.4s ease;
+}
+
+.packages-item__title {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.packages-item__price {
+  font-size: 50px;
+  margin-top: 63px;
+}
+
+.packages-item__description {
+  margin-top: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.packages-item__button {
+  color: #fff;
+  margin-top: 61px;
+}
+
+.packages-item:hover {
+  transform: scaleY(1.08);
+  color: #fff;
+  background-color: #141024;
+}
+
+.packages-item:hover .packages-item__title {
+  transform: scaleY(0.9);
+}
+
+.packages-item:hover .packages-item__price {
+  transform: scaleY(0.9);
+}
+
+.packages-item:hover .packages-item__description {
+  transform: scaleY(0.9);
+}
+
+.packages-item:hover .packages-item__button {
+  transform: scaleY(0.9);
+}
