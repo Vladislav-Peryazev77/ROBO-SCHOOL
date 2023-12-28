@@ -106,7 +106,7 @@ section {
   border-radius: 5px;
   font-size: 18px;
   color: inherit;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease;
   background-color: #d52027;
 }
 
@@ -294,11 +294,12 @@ section {
 
 .packages-item__description {
   margin-top: 20px;
+  margin-bottom: 61px;
   width: 250px;
   text-align: center;
 }
 
 .packages-item__button {
   color: #fff;
-  margin-top: 61px;
+  margin-top: auto;
 }
