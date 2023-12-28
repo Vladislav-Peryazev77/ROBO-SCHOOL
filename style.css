@@ -106,7 +106,7 @@ section {
   border-radius: 5px;
   font-size: 18px;
   color: inherit;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease;
   background-color: #d52027;
 }
 
@@ -145,7 +145,7 @@ section {
 }
 
 .stats-item__description {
-  color: rgba(20, 16, 36, 0.7);
+  color: #141024b3;
 }
 
 .benefits {
@@ -180,6 +180,10 @@ section {
   margin-top: 20px;
 }
 
+.coachs {
+  padding-bottom: 0;
+}
+
 .coachs-title {
   font-size: 50px;
   color: #141024;
@@ -190,7 +194,6 @@ section {
   display: flex;
   overflow-x: scroll;
   gap: 40px;
-  justify-content: space-between;
 }
 
 .coachs-item {
@@ -200,8 +203,8 @@ section {
 }
 
 .coachs-item__photo {
-  width: 360px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -219,4 +222,81 @@ section {
 .coachs-item__info-button {
   color: #d52027;
   margin-top: 20px;
+}
+
+.packages-title {
+  color: #141024;
+  font-size: 50px;
+}
+
+.packages-wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.packages-item {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #14102433;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #141024;
+  flex-basis: 360px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 40px;
+}
+
+.packages-item:hover {
+  color: #fff;
+  background-color: #141024;
+}
+
+.packages-item:hover .packages-item__title::before,
+.packages-item:hover .packages-item__title::after {
+  background-color: #fff;
+}
+
+.packages-item__title {
+  font-size: 30px;
+  position: relative;
+}
+
+.packages-item__title::before,
+.packages-item__title::after {
+  position: absolute;
+  width: 19px;
+  height: 3px;
+  background-color: #141024;
+  content: "";
+  top: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.packages-item__title::before {
+  left: -33px;
+}
+
+.packages-item__title::after {
+  right: -33px;
+}
+
+.packages-item__price {
+  font-size: 50px;
+  margin-top: 63px;
+}
+
+.packages-item__description {
+  margin-top: 20px;
+  margin-bottom: 61px;
+  text-align: center;
+}
+
+.packages-item__button {
+  color: #fff;
+  margin-top: auto;
 }
