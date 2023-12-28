@@ -247,12 +247,11 @@ section {
   justify-content: center;
   color: #141024;
   flex-basis: 360px;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   padding: 40px;
 }
 
 .packages-item:hover {
-  transform: scaleY(1.02);
   color: #fff;
   background-color: #141024;
 }
@@ -275,7 +274,6 @@ section {
   background-color: #141024;
   content: "";
   top: 50%;
-  transform: translateY(-50%);
   transition: background-color 0.3s ease;
 }
 
