@@ -1,0 +1,52 @@
+body {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+b {
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+section {
+  padding: 120px 0;
+}
+
+.button {
+  border: none;
+  padding: 25px 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  font: inherit;
+  color: inherit;
+  transition: background-color 0.3s ease;
+  background-color: var(--accent-color);
+}
+
+.button:hover {
+  background-color: var(--accent-color-hover);
+}
