@@ -9,7 +9,7 @@
 .packages-item {
   cursor: pointer;
   border-radius: 20px;
-  border: 1px solid #14102433;
+  border: var(--primary-border);
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -5,11 +5,7 @@
   position: relative;
   overflow: hidden;
   padding: 0;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1160px;
+  max-height: 972px;
 }
 
 .promo-wrapper {

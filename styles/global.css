@@ -1,5 +1,5 @@
 body {
-  font-family: Jost;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -49,4 +49,20 @@ section {
 
 .button:hover {
   background-color: var(--accent-color-hover);
+}
+
+.logo {
+  min-width: 255px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.contacts {
+  max-width: 255px;
+  font-size: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
 }

@@ -15,7 +15,7 @@
 }
 
 .stats-item__number {
-  color: #d52027;
+  color: var(--accent-color);
   font-size: 70px;
 }
 
