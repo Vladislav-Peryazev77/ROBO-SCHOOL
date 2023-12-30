@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #141024;
+  --primary-color-opacity70: #141024b3;
+  --white-color: #fff;
+  --accent-color: #d52027;
+  --accent-color-hover: #cc3d42;
+  --grey-bg-color: #f9f9f9;
+  --primary-border-color: #14102433;
+  --primary-border: 1px solid var(--primary-border-color);
+}

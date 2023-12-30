@@ -1,0 +1,22 @@
+.header {
+  background-color: var(--primary-color);
+  padding: 30px 0;
+  color: var(--white-color);
+}
+
+.header-content {
+  margin: 0 auto;
+  max-width: 1720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  list-style: none;
+}

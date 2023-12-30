@@ -1,0 +1,25 @@
+.benefits {
+  background-color: var(--grey-bg-color);
+  padding: 100px 0;
+}
+
+.benefits-wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  flex-basis: 360px;
+}
+
+.benefits-item__title {
+  font-size: 24px;
+}
+
+.benefits-item__description {
+  color: var(--primary-color-opacity70);
+  margin-top: 20px;
+}

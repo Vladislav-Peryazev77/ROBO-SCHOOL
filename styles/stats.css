@@ -1,0 +1,24 @@
+.stats-description {
+  font-size: 30px;
+  width: 891px;
+}
+
+.stats-wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.stats-item {
+  flex-basis: 360px;
+}
+
+.stats-item__number {
+  color: var(--accent-color);
+  font-size: 70px;
+}
+
+.stats-item__description {
+  color: var(--primary-color-opacity70);
+}

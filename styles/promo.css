@@ -1,0 +1,35 @@
+.promo {
+  height: calc(100dvh - 108px);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  max-height: 972px;
+}
+
+.promo-wrapper {
+  margin-top: 22%;
+}
+
+.promo-text__title {
+  font-size: 70px;
+}
+
+.promo-text__subtitle {
+  font-size: 20px;
+  max-width: 478px;
+  margin-top: 20px;
+}
+
+.promo-wrapper__button {
+  margin-top: 50px;
+}
+
+.promo-wrapper__img {
+  position: absolute;
+  left: 48%;
+  width: 783px;
+  height: 917px;
+  top: 54px;
+}

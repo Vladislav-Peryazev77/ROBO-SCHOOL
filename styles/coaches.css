@@ -1,0 +1,37 @@
+.coaches {
+  padding-bottom: 0;
+}
+
+.coaches-wrapper {
+  margin-top: 60px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 40px;
+}
+
+.coaches-item {
+  flex-basis: 360px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.coaches-item__photo {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.coaches-item__title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.coaches-item__description {
+  color: var(--primary-color-opacity70);
+  margin-top: 10px;
+}
+
+.coaches-item__info-button {
+  color: #d52027;
+  margin-top: 20px;
+}
