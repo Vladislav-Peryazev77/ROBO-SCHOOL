@@ -7,4 +7,6 @@
   --grey-bg-color: #f9f9f9;
   --primary-border-color: #14102433;
   --primary-border: 1px solid var(--primary-border-color);
+  --secondary-white-color: #f6f6f6;
+  --button-dark-hover: #1f1938;
 }
