@@ -12,10 +12,7 @@
   padding: 0 59px 0 76px;
   display: flex;
   justify-content: space-between;
-}
-
-.registration-text {
-  flex-basis: 476px;
+  gap: 64px;
 }
 
 .registration-text__title {
