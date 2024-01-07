@@ -51,6 +51,15 @@ section {
   background-color: var(--accent-color-hover);
 }
 
+.button--dark {
+  padding: 19px 20px;
+  background-color: var(--primary-color);
+}
+
+.button--dark:hover {
+  background-color: var(--button-dark-hover);
+}
+
 .logo {
   min-width: 255px;
   font-size: 30px;
