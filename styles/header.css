@@ -20,3 +20,54 @@
   font-size: 20px;
   list-style: none;
 }
+
+@media (max-width: 1800px) {
+  .header {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header-menu > a {
+    display: none;
+  }
+
+  .header-contacts {
+    display: none;
+  }
+
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-contacts {
+    display: none;
+  }
+}

@@ -61,7 +61,7 @@ section {
 }
 
 .logo {
-  min-width: 255px;
+  /* min-width: 255px; */
   font-size: 30px;
   font-weight: 700;
 }
@@ -74,4 +74,40 @@ section {
 .container {
   margin: 0 auto;
   max-width: 1160px;
+}
+
+.header-buttons {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .container {
+    max-width: 320px;
+  }
+
+  .logo {
+    min-width: 136px;
+    font-size: 18px;
+  }
 }

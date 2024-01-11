@@ -43,6 +43,7 @@
   content: "";
   top: 50%;
   transition: background-color 0.3s ease;
+  transform: translateY(-50%);
 }
 
 .packages-item__title::before {
