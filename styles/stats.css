@@ -1,6 +1,5 @@
 .stats-description {
   font-size: 30px;
-  /* width: 891px; */
 }
 
 .stats-wrapper {
@@ -11,7 +10,6 @@
 }
 
 .stats-item {
-  /* flex-basis: 260px; */
   flex-basis: 25%;
 }
 
