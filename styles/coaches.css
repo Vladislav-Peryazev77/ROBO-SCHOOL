@@ -35,3 +35,47 @@
   color: #d52027;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .coaches-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .coaches-item__photo {
+    width: 310;
+    height: 470px;
+  }
+}
+
+@media (max-width: 425px) {
+  .coaches-item {
+    flex-basis: 220px;
+  }
+
+  .coaches-title {
+    font-size: 30px;
+  }
+
+  .coaches-item__title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .coaches-item__description {
+    font-size: 14px;
+  }
+
+  .coaches-item__info-button {
+    font-size: 16px;
+  }
+
+  .coaches-item__photo {
+    width: 220px;
+    height: 306px;
+  }
+
+  .coaches-wrapper {
+    margin-top: 40px;
+  }
+}
