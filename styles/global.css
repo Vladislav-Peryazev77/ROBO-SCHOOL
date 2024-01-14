@@ -100,6 +100,16 @@ section {
   .logo {
     font-size: 22px;
   }
+
+  .button {
+    padding: 17px 54px;
+    font-size: 16px;
+  }
+
+  .button--dark {
+    padding: 18px 0 19px 0;
+    line-height: normal;
+  }
 }
 
 @media (max-width: 320px) {

@@ -61,17 +61,3 @@
     padding: 10px;
   }
 }
-
-@media (max-width: 320px) {
-  .header {
-    padding: 10px;
-  }
-
-  .header-menu {
-    display: none;
-  }
-
-  .header-contacts {
-    display: none;
-  }
-}
