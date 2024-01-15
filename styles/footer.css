@@ -5,11 +5,14 @@
 }
 
 .footer-wrapper {
-  margin: 0 auto;
-  max-width: 1720px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 1720px;
 }
 
 .footer-copyright {
@@ -18,7 +21,7 @@
   margin-top: 5px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1920px) {
   .footer {
     padding: 40px 40px;
   }
