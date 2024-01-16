@@ -36,20 +36,20 @@
   }
 }
 
-@media (max-width: 705px) {
+@media (max-width: 768px) {
   .stats-wrapper {
     flex-direction: column;
     text-align: center;
-  }
-}
-
-@media (max-width: 320px) {
-  .stats-description {
-    font-size: 20px;
   }
 
   .stats-wrapper {
     margin-top: 40px;
     gap: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .stats-description {
+    font-size: 20px;
   }
 }

@@ -80,14 +80,29 @@
 @media (max-width: 768px) {
   .packages-title {
     font-size: 40px;
+    line-height: 1.4;
   }
 
   .packages-wrapper {
     margin-top: 40px;
   }
+
+  .packages-item:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+  }
+
+  .packages-item:hover .packages-item__title::before,
+  .packages-item:hover .packages-item__title::after {
+    background-color: var(--primary-color);
+  }
 }
 
 @media (max-width: 425px) {
+  .packages-wrapper {
+    gap: 30px;
+  }
+
   .packages-title {
     font-size: 30px;
   }

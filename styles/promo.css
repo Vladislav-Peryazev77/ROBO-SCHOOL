@@ -34,7 +34,15 @@
   top: 54px;
 }
 
+@media (max-width: 1200px) {
+  .promo {
+    height: calc(100dvh - 78px);
+  }
+}
 @media (max-width: 990px) {
+  /* .promo {
+    height: calc(100dvh - 78px);
+  } */
   .promo-wrapper {
     margin-top: 60px;
   }
@@ -81,6 +89,10 @@
 }
 
 @media (max-width: 425px) {
+  .promo {
+    height: calc(100dvh - 64px);
+    max-height: 630px;
+  }
   .promo-text__title {
     font-size: 40px;
   }
@@ -98,6 +110,10 @@
 }
 
 @media (max-width: 320px) {
+  .promo {
+    max-height: 550px;
+  }
+
   .promo-wrapper {
     margin-top: 37px;
     text-align: center;
