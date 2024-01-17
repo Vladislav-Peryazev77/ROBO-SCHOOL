@@ -40,9 +40,6 @@
   }
 }
 @media (max-width: 990px) {
-  /* .promo {
-    height: calc(100dvh - 78px);
-  } */
   .promo-wrapper {
     margin-top: 60px;
   }
