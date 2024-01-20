@@ -29,11 +29,12 @@
 }
 
 .registration-form {
-  flex-basis: 500px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .registration-form__input {
@@ -46,6 +47,7 @@
 @media (max-width: 1024px) {
   .registration-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .registration-text {
@@ -58,11 +60,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-basis: 0;
-  }
-
-  .registration-form__input,
-  .registration-form .button {
-    width: 500px;
+    align-items: stretch;
   }
 
   .registration {
@@ -82,7 +80,6 @@
   }
 
   .registration-text {
-    max-width: 400px;
     align-self: center;
   }
 
@@ -95,23 +92,9 @@
     font-size: 16px;
     margin-top: 10px;
   }
-
-  .registration-form__input,
-  .registration-form .button {
-    max-width: 400px;
-  }
 }
 
 @media (max-width: 425px) {
-  .registration-text {
-    max-width: 300px;
-  }
-
-  .registration-form__input,
-  .registration-form .button {
-    max-width: 300px;
-  }
-
   .registration-form__input {
     padding: 17px 20px;
   }
