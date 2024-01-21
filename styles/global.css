@@ -61,7 +61,6 @@ section {
 }
 
 .logo {
-  min-width: 255px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -74,4 +73,58 @@ section {
 .container {
   margin: 0 auto;
   max-width: 1160px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .button:hover {
+    background-color: var(--accent-color);
+  }
+
+  .button--dark:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .button {
+    padding: 17px 54px;
+    font-size: 16px;
+  }
+
+  .button--dark {
+    padding: 18px 0 19px 0;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .logo {
+    min-width: 136px;
+    font-size: 18px;
+  }
 }
