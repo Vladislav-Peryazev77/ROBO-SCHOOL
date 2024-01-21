@@ -42,12 +42,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .benefits-wrapper {
-    justify-content: center;
-  }
-}
-
 @media (max-width: 768px) {
   .benefits-title {
     font-size: 40px;
@@ -59,7 +53,7 @@
   }
 
   .benefits-item {
-    flex-basis: 0;
+    flex-basis: unset;
   }
 }
 

@@ -21,6 +21,10 @@
   list-style: none;
 }
 
+.header-buttons {
+  display: none;
+}
+
 @media (max-width: 1800px) {
   .header {
     padding: 30px 40px;

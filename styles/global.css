@@ -75,10 +75,6 @@ section {
   max-width: 1160px;
 }
 
-.header-buttons {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .container {
     width: 100%;
