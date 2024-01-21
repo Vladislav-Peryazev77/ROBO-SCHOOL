@@ -19,25 +19,26 @@
   align-items: center;
   font-size: 20px;
   list-style: none;
+    transition: all 0.3s ease;
 }
 
 .icon-button {
-  width: 44px;
-  height: 44px;
-  border: 1px solid #fff;
-  position: relative;
-  border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 10px;
 }
 
 .icon-position {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 1800px) {
@@ -63,27 +64,27 @@
     transform: translateY(-100%);
     width: 100vw;
     height: 100dvh;
-    background-color: var(--primary-color);
+      background-color: var(--primary-color);
   }
 
-  .header-menu--active {
-    top: 0;
-    left: 0;
-    margin: 0;
-    transform: translateY(0);
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-  }
+    .header-menu--active {
+        top: 0;
+        left: 0;
+        margin: 0;
+        transform: translateY(0);
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
 
-  .hidden {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
+    .hidden {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 
   .header-contacts {
     display: none;
@@ -94,9 +95,9 @@
     gap: 10px;
   }
 
-  .lock {
-    overflow: hidden;
-  }
+    .lock {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 425px) {
@@ -104,13 +105,13 @@
     padding: 10px;
   }
 
-  .header-menu--active {
-    font-size: 30px;
-    gap: 20px;
-  }
+    .header-menu--active {
+        font-size: 30px;
+        gap: 20px;
+    }
 
-  .hidden {
-    top: 10px;
-    right: 10px;
-  }
+    .hidden {
+        top: 10px;
+        right: 10px;
+    }
 }
