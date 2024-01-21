@@ -6,8 +6,10 @@ const navBarButtonCloser = document.querySelector(
 
 navBarButton.addEventListener("click", (e) => {
   headerMenu.classList.add("header-menu--active");
+  document.body.classList.add("lock");
 });
 
 navBarButtonCloser.addEventListener("click", (e) => {
   headerMenu.classList.remove("header-menu--active");
+  document.body.classList.remove("lock");
 });
