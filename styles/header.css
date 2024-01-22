@@ -25,6 +25,25 @@
   display: none;
 }
 
+.header-button__navbar-closer {
+  display: none;
+}
+
+.icon-button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #fff;
+  position: relative;
+  border-radius: 10px;
+}
+
+.icon-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (max-width: 1800px) {
   .header {
     padding: 30px 40px;
@@ -44,10 +63,28 @@
 
   .header-menu {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
-    transform: translateY(-100%);
     width: 100vw;
     height: 100dvh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    background-color: var(--primary-color);
+    transition: transform 0.3s ease;
+  }
+
+  .hidden {
+    transform: translateY(-100dvh);
+  }
+
+  .header-button__navbar-closer {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 15px;
   }
 
   .header-contacts {
@@ -63,5 +100,10 @@
 @media (max-width: 425px) {
   .header {
     padding: 10px;
+  }
+
+  .header-button__navbar-closer {
+    top: 10px;
+    right: 10px;
   }
 }
