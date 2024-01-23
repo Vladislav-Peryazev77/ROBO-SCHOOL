@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Jost", sans-serif;
   font-weight: 400;
@@ -99,6 +103,10 @@ section {
 
   .button--dark:hover {
     background-color: var(--primary-color);
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }
 

@@ -25,7 +25,7 @@
   display: none;
 }
 
-.header-button__navbar-closer {
+.header-button__navbar-close {
   display: none;
 }
 
@@ -80,7 +80,7 @@
     transform: translateY(-100dvh);
   }
 
-  .header-button__navbar-closer {
+  .header-button__navbar-close {
     display: block;
     position: absolute;
     top: 17px;
@@ -102,7 +102,7 @@
     padding: 10px;
   }
 
-  .header-button__navbar-closer {
+  .header-button__navbar-close {
     top: 10px;
     right: 10px;
   }
