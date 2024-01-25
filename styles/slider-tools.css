@@ -1,0 +1,76 @@
+.slider-tools {
+  display: flex;
+  margin-top: 60px;
+  margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-scrollbar {
+  height: 24px;
+  width: 360px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 7px;
+}
+
+.scrollbar-track {
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary-color-opacity8);
+  border-radius: 40px;
+  position: relative;
+}
+
+.scrollbar-thumb {
+  position: absolute;
+  cursor: grab;
+  height: 100%;
+  width: 260px;
+  background-color: var(--primary-color);
+  border-radius: inherit;
+}
+
+.scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 9px;
+  top: -2px;
+}
+
+.scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.slider-button {
+  height: 33px;
+  width: 33px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.slider-button:hover {
+  background-color: var(--button-dark-hover);
+}
+
+@media (max-width: 768px) {
+  .slider-tools {
+    display: none;
+  }
+}
