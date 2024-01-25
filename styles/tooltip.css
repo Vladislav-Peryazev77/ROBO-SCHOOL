@@ -28,13 +28,8 @@
 }
 
 @media (max-width: 320px) {
-  .tooltip {
-    padding: 0 14px 0 14px;
-  }
-
   .tooltip-description {
     max-width: 224px;
-    left: -270%;
-    bottom: calc(100% + 10px);
+    left: -325%;
   }
 }
