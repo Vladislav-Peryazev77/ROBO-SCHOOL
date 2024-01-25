@@ -1,0 +1,40 @@
+.tooltip {
+  padding: 10px;
+  position: relative;
+}
+
+.tooltip-icon {
+  background-color: var(--grey-color-v2);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.tooltip-description {
+  display: none;
+  position: absolute;
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  min-width: 251px;
+  bottom: 100%;
+  left: 0;
+  border-radius: 5px;
+}
+
+.tooltip:hover .tooltip-description {
+  display: block;
+}
+
+@media (max-width: 320px) {
+  .tooltip {
+    padding: 0 14px 0 14px;
+  }
+
+  .tooltip-description {
+    max-width: 224px;
+    left: -270%;
+    bottom: calc(100% + 10px);
+  }
+}
