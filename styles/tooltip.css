@@ -9,6 +9,7 @@
   height: 24px;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
 }
 
 .tooltip-description {
@@ -25,6 +26,12 @@
 
 .tooltip:hover .tooltip-description {
   display: block;
+}
+
+@media (max-width: 1200px) {
+  .tooltip-description {
+    /* left: -250%; */
+  }
 }
 
 @media (max-width: 320px) {
