@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .benefits-title {
     font-size: 30px;
     line-height: 1.4;
