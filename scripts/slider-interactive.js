@@ -2,7 +2,7 @@ const imageList = document.querySelector(".coaches-wrapper");
 const sliderButtons = document.querySelectorAll(".slider-button");
 const sliderScrollbar = document.querySelector(".slider-scrollbar");
 const scrollbarThumb = document.querySelector(".scrollbar-thumb");
-const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+let maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
 // скрол по кнопкам
 sliderButtons.forEach((button) => {
@@ -29,7 +29,7 @@ scrollbarThumb.addEventListener("mousedown", (e) => {
   const maxThumbPosition =
     sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
 
-  // обновление позиции индикатора при скроле, ограничение возмонжости выйти из доступной ширины,
+  // обновление позиции индикатора при скроле, ограничение возможности выйти из доступной ширины,
   // скрол картинок при скроле индикатора
   const handleMouseMove = (e) => {
     const deltaX = e.clientX - startX;
@@ -56,4 +56,9 @@ scrollbarThumb.addEventListener("mousedown", (e) => {
 
   document.addEventListener("mousemove", handleMouseMove);
   document.addEventListener("mouseup", handleMouseUp);
+});
+
+// пересчитывание position при ресайзе
+window.addEventListener("resize", (event) => {
+  maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 });
