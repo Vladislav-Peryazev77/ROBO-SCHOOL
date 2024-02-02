@@ -1,6 +1,11 @@
-.tooltip {
-  padding: 10px;
+.tooltip-position {
   position: relative;
+}
+
+.tooltip {
+  margin-top: -10px;
+  padding: 10px;
+  position: absolute;
 }
 
 .tooltip-icon {

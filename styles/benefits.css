@@ -24,13 +24,6 @@
   margin-top: 20px;
 }
 
-.benefits-item__wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-top: -5px;
-}
-
 @media (max-width: 1200px) {
   .benefits-item {
     flex-basis: 270px;
