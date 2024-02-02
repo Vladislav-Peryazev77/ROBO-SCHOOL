@@ -1,0 +1,100 @@
+.modal {
+  position: fixed;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 20px;
+  max-width: 940px;
+  max-height: 770px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.modal-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 335px;
+  align-items: flex-start;
+}
+
+.modal-img {
+  flex-basis: 160px;
+  width: 160px;
+  height: 222px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-name {
+  font-size: 24px;
+}
+
+.modal-jobtitle {
+  color: var(--grey-primary-color);
+}
+
+.modal-links {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-link {
+  transition: transform 0.3s ease;
+}
+
+.modal-link:hover {
+  transform: translateY(-2px);
+}
+
+.modal-closebutton {
+  color: var(--grey-primary-color);
+}
+
+.modal-tabs {
+  margin-top: 40px;
+  display: flex;
+  gap: 185px;
+  font-size: 20px;
+}
+
+.modal-line {
+  height: 1px;
+  background-color: var(--grey-line-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.modal-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.modal-title {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.modal-tabs .active {
+  color: var(--accent-color);
+}
+
+.modal-tab:hover {
+  color: var(--accent-color);
+}
+
+.modal-content {
+  display: none;
+}
+
+.modal-description .active {
+  display: block;
+}
