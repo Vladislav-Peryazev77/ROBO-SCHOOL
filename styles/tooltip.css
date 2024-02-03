@@ -1,9 +1,4 @@
-.tooltip-position {
-  position: relative;
-}
-
 .tooltip {
-  margin-top: -10px;
   padding: 10px;
   position: absolute;
 }
@@ -37,12 +32,6 @@
 @media (max-width: 1200px) {
   .tooltip-description {
     left: -95px;
-  }
-}
-
-@media (max-width: 930px) {
-  .tooltip-description {
-    left: unset;
   }
 }
 
