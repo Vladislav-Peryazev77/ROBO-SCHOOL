@@ -9,6 +9,14 @@
   gap: 40px;
 }
 
+.coaches-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.coaches-wrapper::-moz-scrollbar {
+  scrollbar-width: none;
+}
+
 .coaches-item {
   flex-basis: 360px;
   flex-shrink: 0;
