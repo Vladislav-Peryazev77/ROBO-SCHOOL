@@ -17,11 +17,16 @@
 
 .benefits-item__title {
   font-size: 24px;
+  position: relative;
 }
 
 .benefits-item__description {
   color: var(--primary-color-opacity70);
   margin-top: 20px;
+}
+
+.benefits-item__title .tooltip {
+  margin-top: -10px;
 }
 
 @media (max-width: 1200px) {
@@ -57,7 +62,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .benefits-title {
     font-size: 30px;
     line-height: 1.4;
@@ -76,5 +81,9 @@
     margin-top: 40px;
     gap: 30px;
     text-align: center;
+  }
+
+  .benefits-item__wrapper {
+    justify-content: center;
   }
 }
