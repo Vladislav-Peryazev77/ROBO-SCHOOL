@@ -1,12 +1,20 @@
 .modal {
+  padding: 0;
+  border: none;
+}
+
+.modal-wrapper {
   position: fixed;
   padding: 40px;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   border-radius: 20px;
+  width: 940px;
   max-width: 940px;
+  height: 770px;
   max-height: 770px;
+  background-color: var(--white-color);
 }
 
 .modal-header {
@@ -15,7 +23,7 @@
   gap: 40px;
 }
 
-.modal-wrapper {
+.modal-header-content {
   display: flex;
   justify-content: space-between;
   gap: 335px;
@@ -39,7 +47,7 @@
 }
 
 .modal-jobtitle {
-  color: var(--grey-primary-color);
+  color: var(--primary-color-opacity70);
 }
 
 .modal-links {
@@ -56,14 +64,17 @@
 }
 
 .modal-closebutton {
-  color: var(--grey-primary-color);
+  color: var(--primary-color-opacity70);
 }
 
 .modal-tabs {
   margin-top: 40px;
   display: flex;
+  align-items: flex-start;
   gap: 185px;
   font-size: 20px;
+  height: 52px;
+  border-bottom: 1px solid var(--grey-line-color);
 }
 
 .modal-line {
@@ -71,6 +82,11 @@
   background-color: var(--grey-line-color);
   margin-top: 20px;
   width: 100%;
+}
+
+.modal-description {
+  max-height: 350px;
+  overflow-y: scroll;
 }
 
 .modal-text {
