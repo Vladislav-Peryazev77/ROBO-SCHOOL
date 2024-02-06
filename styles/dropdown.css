@@ -1,0 +1,88 @@
+.modal-dropdown {
+  position: relative;
+  display: none;
+  margin-top: 20px;
+}
+
+.select {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.select:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 5px;
+  background-color: #d23c41;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.menu li {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.menu li:hover {
+  background-color: #d11e24;
+}
+
+.active-dropdown {
+  background-color: #cd1414;
+}
+
+.menu-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .select:hover {
+    background-color: var(--accent-color);
+  }
+
+  .menu li:hover {
+    background-color: #d23c41;
+  }
+
+  .modal-dropdown {
+    display: block;
+  }
+
+  .modal-tabs {
+    display: none;
+  }
+}
