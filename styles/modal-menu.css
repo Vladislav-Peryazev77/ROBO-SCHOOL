@@ -73,7 +73,7 @@
 
 .modal-tabs {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -83,6 +83,10 @@
 
 .modal-tab-wrapper {
   flex-basis: 300px;
+}
+
+.modal-tab {
+  padding: 20px 0;
 }
 
 .modal-line {
