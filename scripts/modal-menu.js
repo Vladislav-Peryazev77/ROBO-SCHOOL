@@ -1,5 +1,6 @@
 const openButtons = document.querySelectorAll(".coaches-item__info-button");
 const closeButton = document.querySelector(".modal-closebutton");
+const closeButtonIcon = document.querySelector(".modal-closebutton-icon");
 const modal = document.querySelector(".modal");
 
 const tabs = document.querySelectorAll(".modal-tab");
@@ -15,6 +16,11 @@ openButtons.forEach((openButton) => {
 });
 
 closeButton.addEventListener("click", (event) => {
+  modal.close();
+  document.body.classList.remove("lock");
+});
+
+closeButtonIcon.addEventListener("click", (event) => {
   modal.close();
   document.body.classList.remove("lock");
 });
