@@ -89,6 +89,10 @@
   padding: 20px 0;
 }
 
+.modal-tab {
+  padding: 20px 0;
+}
+
 .modal-line {
   height: 1px;
   background-color: var(--grey-line-color);
