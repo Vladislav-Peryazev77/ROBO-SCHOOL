@@ -1,5 +1,5 @@
 const openButtons = document.querySelectorAll(".coaches-item__info-button");
-const closeButtons = document.querySelectorAll(".modal-closebutton");
+const closeButton = document.querySelector(".modal-closebutton");
 const modal = document.querySelector(".modal");
 
 const tabs = document.querySelectorAll(".modal-tab");
@@ -14,11 +14,9 @@ openButtons.forEach((openButton) => {
   });
 });
 
-closeButtons.forEach((closeButton) => {
-  closeButton.addEventListener("click", (event) => {
-    modal.close();
-    document.body.classList.remove("lock");
-  });
+closeButton.addEventListener("click", (event) => {
+  modal.close();
+  document.body.classList.remove("lock");
 });
 
 tabs.forEach((tab) => {
@@ -47,5 +45,6 @@ function closeOnBackDropClick({ currentTarget, target }) {
   const isClickedOnBackDrop = target === dialogElement;
   if (isClickedOnBackDrop) {
     dialogElement.close();
+    document.body.classList.remove("lock");
   }
 }
