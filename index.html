@@ -183,6 +183,133 @@
                 преподаватель по робототехнике
               </div>
               <button class="coaches-item__info-button">Подробнее</button>
+              <dialog class="modal">
+                <div class="modal-wrapper">
+                  <div class="modal-header">
+                    <img
+                      src="./images/coach-photo-for-slider2.png"
+                      alt=""
+                      class="modal-img"
+                    />
+                    <div class="modal-header-content">
+                      <div class="modal-info">
+                        <div class="modal-name"><b>Мария Орлова</b></div>
+                        <div class="modal-jobtitle">
+                          преподаватель по робототехнике
+                        </div>
+                        <div class="modal-links">
+                          <a href="" class="modal-link"
+                            ><img src="./images/facebook-icon.svg" alt=""
+                          /></a>
+                          <a href="" class="modal-link"
+                            ><img src="./images/insta-icon.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <button class="modal-closebutton">Закрыть</button>
+                      <button class="modal-closebutton-icon">
+                        <svg
+                          width="14"
+                          height="15"
+                          viewBox="0 0 14 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <line
+                            x1="1.49245"
+                            y1="2"
+                            x2="12.6"
+                            y2="13.1075"
+                            stroke="black"
+                            stroke-width="2.11065"
+                            stroke-linecap="round"
+                          />
+                          <line
+                            x1="1.40039"
+                            y1="13.1076"
+                            x2="12.5079"
+                            y2="2.0001"
+                            stroke="black"
+                            stroke-width="2.11065"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="modal-tabs">
+                    <div class="modal-tab-wrapper">
+                      <button class="modal-tab active" data-tab="#tab1">
+                        Образование
+                      </button>
+                    </div>
+                    <div class="modal-tab-wrapper">
+                      <button class="modal-tab" data-tab="#tab2">
+                        Опыт работы
+                      </button>
+                    </div>
+                    <div class="modal-tab-wrapper">
+                      <button class="modal-tab" data-tab="#tab3">
+                        Награды
+                      </button>
+                    </div>
+                  </div>
+                  <div class="modal-description">
+                    <div class="modal-content active" id="tab1">
+                      <div class="modal-text">
+                        Сентябрь 1995 — Июнь 2000 <br />
+                        Санкт-Петербургский политехнический университет Петра
+                        Великого <br />
+                        Факультет: Компьютерных наук и технологий<br />
+                        Специальность: Математика и компьютерные науки <br />
+                        Форма обучения: Очная
+                      </div>
+                      <h3 class="modal-title">
+                        <b>Курсы и тренинги</b>
+                      </h3>
+                      <div class="modal-text">
+                        Ноябрь 2020 — Февраль 2021 <br />
+                        Программа дополнительного образования «3D Моделирование»
+                        <br />
+                        Место проведения: Институт дополнительного образования
+                        «Политех»
+                      </div>
+                    </div>
+                    <div class="modal-content" id="tab2">
+                      <div class="modal-text">
+                        Работала в качестве преподавателя по робототехнике в
+                        техническом университете в течение трех лет. <br />
+                        Проводила лекции, практические занятия и лабораторные
+                        работы для студентов, обучая их основам робототехники,
+                        программированию и электронике. <br />
+                        Также руководила студенческими проектами в области
+                        робототехники, помогая студентам разрабатывать и строить
+                        собственные роботы.
+                      </div>
+                    </div>
+                    <div class="modal-content" id="tab3">
+                      <div class="modal-text">
+                        1. Победитель национального соревнования робототехники.
+                        Привела команду студентов, которые разработали и
+                        построили инновационного робота, способного выполнять
+                        сложные задачи. Их проект получил высокую оценку
+                        экспертов и был признан лучшим на соревновании. <br />
+                        2. Награда за вклад в образование. Была отмечена за свой
+                        выдающийся вклад в образование и развитие робототехники
+                        среди студентов. Ее энтузиазм и преданность делу помогли
+                        вдохновить и мотивировать молодых людей на изучение этой
+                        области и достижение успеха. <br />
+                        3. Сертификат признания от международной
+                        робототехнической организации. Получила сертификат
+                        признания за свою экспертизу и вклад в развитие
+                        робототехники. Она была приглашена выступить на
+                        конференции и поделиться своим опытом и знаниями с
+                        другими участниками.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </dialog>
             </div>
             <div class="coaches-item">
               <img
@@ -324,6 +451,7 @@
       </div>
     </footer>
   </body>
-  <script src="./scripts/navbar.js"></script>
-  <script src="./scripts/slider-interactive.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/slider-interactive.js"></script>
+  <script src="scripts/modal-menu.js"></script>
 </html>

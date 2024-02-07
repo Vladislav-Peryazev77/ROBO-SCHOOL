@@ -1,0 +1,128 @@
+.modal {
+  padding: 0;
+  border: none;
+}
+
+.modal-wrapper {
+  position: fixed;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 20px;
+  width: 940px;
+  max-width: 100%;
+  height: 770px;
+  max-height: 100%;
+  background-color: var(--white-color);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.modal-header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-img {
+  flex-basis: 160px;
+  width: 160px;
+  height: auto;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-name {
+  font-size: 24px;
+}
+
+.modal-jobtitle {
+  color: var(--primary-color-opacity70);
+}
+
+.modal-links {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-link {
+  transition: transform 0.3s ease;
+}
+
+.modal-link:hover {
+  transform: translateY(-2px);
+}
+
+.modal-closebutton {
+  color: var(--primary-color-opacity70);
+}
+
+.modal-closebutton-icon {
+  display: none;
+}
+
+.modal-tabs {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 1px solid var(--grey-line-color);
+}
+
+.modal-tab-wrapper {
+  flex-basis: 33%;
+}
+
+.modal-tab {
+  padding: 20px 0;
+}
+
+.modal-line {
+  height: 1px;
+  background-color: var(--grey-line-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.modal-description {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.modal-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.modal-title {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.modal-tabs .active {
+  color: var(--accent-color);
+}
+
+.modal-tab:hover {
+  color: var(--accent-color);
+}
+
+.modal-description .modal-content {
+  display: none;
+}
+
+.modal-description .active {
+  display: block;
+}
