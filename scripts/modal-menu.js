@@ -9,24 +9,29 @@ const tabContents = document.querySelectorAll(".modal-content");
 const dialogElement = document.querySelector(".modal");
 
 openButtons.forEach((openButton) => {
-  openButton.addEventListener("click", (event) => {
+  openButton.addEventListener("click", () => {
     modal.showModal();
     document.body.classList.add("lock");
   });
 });
 
-closeButton.addEventListener("click", (event) => {
+closeButton.addEventListener("click", () => {
   modal.close();
   document.body.classList.remove("lock");
+
+  const menu = document.querySelector(".menu");
+  const arrow = document.querySelector(".arrow");
+  arrow.classList.remove("arrow-rotate");
+  menu.classList.remove("menu-open");
 });
 
-closeButtonIcon.addEventListener("click", (event) => {
+closeButtonIcon.addEventListener("click", () => {
   modal.close();
   document.body.classList.remove("lock");
 });
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", (event) => {
+  tab.addEventListener("click", () => {
     let tabId = tab.getAttribute("data-tab");
     let currentTabContent = document.querySelector(tabId);
 
@@ -40,6 +45,16 @@ tabs.forEach((tab) => {
         content.classList.remove("active");
       });
       currentTabContent.classList.add("active");
+
+      options.forEach((option) => {
+        let optionId = option.getAttribute("data-tab");
+
+        option.classList.remove("active-dropdown");
+        if (tabId === optionId) {
+          option.classList.add("active-dropdown");
+          selected.innerText = tab.innerText;
+        }
+      });
     }
   });
 });
@@ -52,5 +67,15 @@ function closeOnBackDropClick({ currentTarget, target }) {
   if (isClickedOnBackDrop) {
     dialogElement.close();
     document.body.classList.remove("lock");
+  }
+
+  const select = document.querySelector(".select");
+  const menu = document.querySelector(".menu");
+  const arrow = document.querySelector(".arrow");
+  const selected = document.querySelector(".selected");
+
+  if (target !== select && target !== menu && target !== selected) {
+    arrow.classList.remove("arrow-rotate");
+    menu.classList.remove("menu-open");
   }
 }

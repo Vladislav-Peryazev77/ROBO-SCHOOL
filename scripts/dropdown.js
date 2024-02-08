@@ -1,19 +1,18 @@
-const dropdown = document.querySelector(".dropdown");
 const select = document.querySelector(".select");
 const arrow = document.querySelector(".arrow");
 const menu = document.querySelector(".menu");
 const options = document.querySelectorAll(".menu li");
 const selected = document.querySelector(".selected");
 
-const optionContents = document.querySelectorAll(".modal-content");
+// const optionContents = document.querySelectorAll(".modal-content");
 
-select.addEventListener("click", (event) => {
+select.addEventListener("click", () => {
   arrow.classList.toggle("arrow-rotate");
   menu.classList.toggle("menu-open");
 });
 
 options.forEach((option) => {
-  option.addEventListener("click", (event) => {
+  option.addEventListener("click", () => {
     selected.innerText = option.innerText;
 
     arrow.classList.remove("arrow-rotate");
@@ -35,10 +34,18 @@ options.forEach((option) => {
       });
       option.classList.add("active");
 
-      optionContents.forEach((content) => {
+      tabContents.forEach((content) => {
         content.classList.remove("active");
       });
       currentOptionContent.classList.add("active");
+
+      tabs.forEach((tab) => {
+        let tabId = tab.getAttribute("data-tab");
+        tab.classList.remove("active");
+        if (tabId === optionId) {
+          tab.classList.add("active");
+        }
+      });
     }
   });
 });
