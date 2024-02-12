@@ -74,7 +74,7 @@ function closeOnBackDropClick({ currentTarget, target }) {
   const arrow = document.querySelector(".arrow");
   const selected = document.querySelector(".selected");
 
-  if (target !== select && target !== menu && target !== selected) {
+  if (target !== dropdown && target !== select && target !== selected) {
     arrow.classList.remove("arrow-rotate");
     menu.classList.remove("menu-open");
   }
