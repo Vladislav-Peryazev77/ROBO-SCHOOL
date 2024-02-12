@@ -59,6 +59,6 @@ scrollbarThumb.addEventListener("mousedown", (e) => {
 });
 
 // пересчитывание position при ресайзе
-window.addEventListener("resize", (event) => {
+window.addEventListener("resize", () => {
   maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 });
