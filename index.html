@@ -442,18 +442,21 @@
                 class="registration-form__input"
                 type="text"
                 placeholder="Имя"
+                pattern="^[А-Я][а-я]{1,19}$"
               />
               <input
                 id="tel"
                 class="registration-form__input"
                 type="tel"
                 placeholder="Телефон"
+                pattern="^(?:\+7|8)\d{10}$"
               />
               <input
                 id="email"
                 class="registration-form__input"
                 type="email"
                 placeholder="E-mail"
+                pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
               />
               <button type="submit" class="button button--dark">
                 Оформить заявку
