@@ -1,3 +1,4 @@
+const dropdown = document.querySelector("modal-dropdown");
 const openButtons = document.querySelectorAll(".coaches-item__info-button");
 const closeButton = document.querySelector(".modal-closebutton");
 const closeButtonIcon = document.querySelector(".modal-closebutton-icon");
@@ -18,11 +19,6 @@ openButtons.forEach((openButton) => {
 closeButton.addEventListener("click", () => {
   modal.close();
   document.body.classList.remove("lock");
-
-  const menu = document.querySelector(".menu");
-  const arrow = document.querySelector(".arrow");
-  arrow.classList.remove("arrow-rotate");
-  menu.classList.remove("menu-open");
 });
 
 closeButtonIcon.addEventListener("click", () => {
@@ -74,7 +70,7 @@ function closeOnBackDropClick({ currentTarget, target }) {
   const arrow = document.querySelector(".arrow");
   const selected = document.querySelector(".selected");
 
-  if (target !== select && target !== menu && target !== selected) {
+  if (target !== dropdown && target !== select && target !== selected) {
     arrow.classList.remove("arrow-rotate");
     menu.classList.remove("menu-open");
   }
