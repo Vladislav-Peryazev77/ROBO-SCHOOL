@@ -18,11 +18,6 @@ openButtons.forEach((openButton) => {
 closeButton.addEventListener("click", () => {
   modal.close();
   document.body.classList.remove("lock");
-
-  const menu = document.querySelector(".menu");
-  const arrow = document.querySelector(".arrow");
-  arrow.classList.remove("arrow-rotate");
-  menu.classList.remove("menu-open");
 });
 
 closeButtonIcon.addEventListener("click", () => {
