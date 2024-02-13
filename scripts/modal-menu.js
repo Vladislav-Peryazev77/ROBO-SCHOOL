@@ -1,3 +1,4 @@
+const dropdown = document.querySelector("modal-dropdown");
 const openButtons = document.querySelectorAll(".coaches-item__info-button");
 const closeButton = document.querySelector(".modal-closebutton");
 const closeButtonIcon = document.querySelector(".modal-closebutton-icon");
